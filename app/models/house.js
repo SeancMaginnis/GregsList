@@ -17,7 +17,7 @@ export default class House {
             <div class="card-body">
                 <h5 class="card-title">${this.title}</h5>
                 <p class="card-text">${this.description} -- ${this.price}</p>
-                <button class="btn btn-outline-success" onclick="app.controllers.carController.deleteCar(${this.id})">Remove</button>
+                <button class="btn btn-outline-success" onclick="app.controllers.houseController.deleteHouse(${this.id})">Remove</button>
             </div>
         </div>`
   }

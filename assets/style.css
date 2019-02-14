@@ -1,4 +1,4 @@
 .bg-1{
-  background-image: url("Images/gotit.jpg")
+  background-image: url("Images/gotit.jpg");
+  height: 100vh;
 }
-

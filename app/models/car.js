@@ -12,7 +12,7 @@ export default class Car {
 
     getTemplate() {
         return `
-        <div class="card col-3" style="background-color: rgba(42, 167, 83, 0.459)">
+        <div class="card col-3 d-flex justify-content-center" style="background-color: rgba(42, 167, 83, 0.459)">
             <img class="card-img-top" src="${this.img}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${this.title}</h5>
