@@ -7,22 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/style.css">
     <title>Sean's List</title>
 </head>
 
-<body>
-    <section class="container-fluid">
+<body class="bg-1">
+    <section class="container-fluid ">
         <header class="row">
-            <div class="col text-center">
-                <h1>WELCOME TO SEAN'S LIST</h1>
+            <div class="col text-center text-white">
+                <h1 style="text-shadow: 1px 1px black">WELCOME TO SEAN'S LIST</h1>
             </div>
         </header>
-        <section>
-            <h3>Cars</h3>
+        <section class="text-white">
+            <h3 style="text-shadow: 1px 1px black">Cars</h3>
             <form onsubmit="app.controllers.carController.addCar(event)">
                 <input type="text" name="title" placeholder="Title" required>
                 <input type="text" name="description" placeholder="Description">
@@ -35,10 +33,10 @@
 
         </main>
     </section>
-    <section class="container-fluid">
+    <section class="container-fluid text-white">
         <header class="row "></header>
         <section>
-            <h3>Jobs</h3>
+            <h3 style="text-shadow: 1px 1px black">Jobs</h3>
             <form onsubmit="app.controllers.jobController.addJob(event)">
                 <input type="text" name="title" placeholder="Title" required>
                 <input type="text" name="description" placeholder="Description">
@@ -51,9 +49,9 @@
 
         </main>
     </section>
-    <section class="container-fluid">
+    <section class="container-fluid text-white">
         <header class="row"></header>
-        <h3>Houses</h3>
+        <h3 style="text-shadow: 1px 1px black">Houses</h3>
         <section>
             <form onsubmit="app.controllers.houseController.addHouse(event)">
                 <input type="text" name="title" placeholder="Title" required>
