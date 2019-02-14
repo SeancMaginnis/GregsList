@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Sean's List</title>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <header class="row">
+            <div class="col text-center">
+                <h1>WELCOME TO SEAN'S LIST</h1>
+            </div>
+        </header>
+        <section>
+            <h3>Cars</h3>
+            <form onsubmit="app.controllers.carController.addCar(event)">
+                <input type="text" name="title" placeholder="Title" required>
+                <input type="text" name="description" placeholder="Description">
+                <input type="number" name="price" placeholder="Price" required>
+                <input type="url" name="img" placeholder="Image" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <main class="row" id="available-cars">
+
+        </main>
+    </section>
+    <section class="container-fluid">
+        <header class="row "></header>
+        <section>
+            <h3>Jobs</h3>
+            <form onsubmit="app.controllers.jobController.addJob(event)">
+                <input type="text" name="title" placeholder="Title" required>
+                <input type="text" name="description" placeholder="Description">
+                <input type="number" name="price" placeholder="Price" required>
+                <input type="url" name="img" placeholder="Image" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <main class="row" id="available-jobs">
+
+        </main>
+    </section>
+    <section class="container-fluid">
+        <header class="row"></header>
+        <h3>Houses</h3>
+        <section>
+            <form onsubmit="app.controllers.houseController.addHouse(event)">
+                <input type="text" name="title" placeholder="Title" required>
+                <input type="text" name="description" placeholder="Description">
+                <input type="number" name="price" placeholder="Price" required>
+                <input type="url" name="img" placeholder="Image" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <main class="row" id="available-houses">
+
+        </main>
+    </section>
+
+
+
+    <script type="module" src="app/main.js"></script>
+</body>
+
+</html>
